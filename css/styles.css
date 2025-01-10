@@ -1,0 +1,679 @@
+p {
+    color: white;
+}
+::-webkit-scrollbar {
+    display: flex;
+}
+
+body {
+    height: 100vh;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    overflow: hidden;
+    position: relative;
+}
+
+.background-shadow::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    pointer-events: none; 
+    background: linear-gradient(205deg, #590059b0 2%, transparent 15%);
+    z-index: -1;
+}
+  
+.right{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    margin-left: auto;
+    width: 170px;
+    padding: 5px;
+    border-radius: 10%;
+    margin-right: 1vh;
+}
+.rightTwo{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    z-index: 1;
+    margin-left: auto;
+    width: 170px;
+    padding: 5px;
+    border-radius: 10%;
+    margin-right: 1vh;
+}
+.rightSidebar {
+    margin-top: 1%;
+    display: flex;
+    float: right;
+}
+.statisticsMain {
+    margin-right: 5%;
+    display: inline-flex;
+    gap: 15px;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+}
+.statisticsLeft {
+    display: list-item;
+    list-style: none;
+}
+.statisticsPadding {
+    margin-top: 5px;
+}
+.logo-main {
+    display: flex;
+}
+.logo-main img {
+    display: flex;
+    width: 270px;
+    height: 70px;
+}
+.mainDiv {
+    background-color: #0e1a39b8;
+    position: relative;
+    width: 290px;
+    padding: 0.5vh;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 15px;
+}
+.progressHealth{
+    color: white;
+    text-align: center;
+    position: relative;
+}
+.centered {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    font-family: "Encode Sans Expanded", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    transform: translate(-50%, -50%);
+}
+.centeredSecond {
+    position: absolute;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 10px;
+}
+.statisticsLeftTwo {
+    font-family: "Encode Sans Expanded", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: space-around;
+}
+.iconsImageSecond {
+    width: 25px;
+    height: 25px;
+}
+.cash{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    gap: 5px;
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: 300;
+}
+.bank {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 20px;
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: 300;
+}
+.moneystats { 
+    width: 30px; 
+    height: 30px;
+}
+.textgps {
+    font-size: 20px;
+}
+.rightSidebarTwo {
+    display: flex;
+    float: right;
+    margin-right: 10px;
+}
+.weapons {
+    display: flex;
+    margin-left: 15px;
+    border-radius: 10px;
+    padding: 2vh;
+}
+.weaponimg{
+    width: 50px;
+    height: 35px;
+}
+.ammo {
+    margin-top: 2px;
+}
+.navBar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    left: 1%;
+    top: 43%;
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+    border-radius: 10%;
+  }
+
+  .menu {
+    display: flex;
+    align-items: center;
+  }
+  .square {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #0e1a39b8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    font-family: AkrobatBold;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    font-family: "Encode Sans Expanded", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  .menu h2 {
+    font-family: "BPG Nateli Mtavruli", sans-serif;
+    color: white;
+    margin-left: 1vh;
+  }
+
+.moneydiv{
+    display: inline-flex;
+    padding: 1vh;
+}
+.iconsImage {
+    width: 20px;
+    height: 20px;
+}
+.greenzone {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-family: "BPG Nateli Mtavruli", sans-serif;
+    padding: 10px;
+    text-wrap: nowrap;
+  }
+.menuxzc {
+    background: linear-gradient(to left, #0e1a390b, #0e1a396b, #0e1a39b8);
+    display: none;
+    align-items: center;
+    border-radius: 15px;
+    width: 200px;
+}
+.textzone {
+    font-size: 20px;
+    text-wrap: nowrap;
+    margin-top: 3px;
+}
+.menugps {
+    background: linear-gradient(to left, #0e1a390b, #0e1a396b, #0e1a39b8);
+    display: none;
+    align-items: center;
+    border-radius: 15px;
+    width: 300px;
+}
+.iconlocation {
+    width: 35px;
+    height: 35px;
+}
+.gps {
+    gap: 1px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-family: "BPG Nateli Mtavruli", sans-serif;
+    padding: 5px;
+    text-wrap: nowrap;
+  }
+  .wanteddiv{
+    display: inline-flex;
+    gap: 10px;
+}
+.wantedimg {
+    width: 35px; 
+    height: 35px; 
+    display: none;
+}
+.right-bottom{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    margin-left: auto;
+    width: 170px;
+    padding: 10px;
+    border-radius: 10%;
+    margin-right: 1vh;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.notification {
+    width: 100%;
+    background: linear-gradient(to left, #005b093c, #005b09a8, #005b093c);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: -50px;
+    left: 0;
+    transition: bottom 0.5s;
+}
+
+.hidden {
+    bottom: -50px;
+}
+
+.visible {
+    bottom: 0px;
+}
+
+.icon {
+    padding-right: 10px;
+    font-size: 25px;
+}
+
+#message {
+    font-family: 'BPG Nateli Mtavruli', sans-serif;
+    font-size: 20px;
+}
+.rightGift{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row-reverse;
+    margin-left: auto;
+    width: 170px;
+    padding: 1px;
+    border-radius: 10%;
+    margin-right: 1vh;
+    flex-wrap: nowrap;
+}
+.giftimage {
+    width: 70px;
+    height: 70px;
+}
+.gifttimer {
+    background: linear-gradient(to left, #5900596b, #590059b6, #5900596b);
+    align-items: center;
+    border-radius: 15px;
+    width: 400px;
+    margin-right: 150px;
+}
+.textgift {
+    font-size: 20px;
+    text-wrap: nowrap;
+    margin-top: 3px;
+    font-weight: 900;
+}
+.giftzone {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-family: "BPG Nateli Mtavruli", sans-serif;
+    padding: 5px;
+    text-wrap: nowrap;
+  }
+  .giftTexts {
+    padding: 10px;
+  }
+
+
+
+  @media (max-width: 1440px) {
+    .right{
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        margin-left: auto;
+        width: 100px;
+        padding: 5px;
+        border-radius: 10%;
+        margin-right: 1vh;
+    }
+    .rightTwo{
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        z-index: 1;
+        margin-left: auto;
+        width: 130px;
+        padding: 3px;
+        border-radius: 10%;
+        margin-right: 1vh;
+    }
+    .rightSidebar {
+        padding: 5px;
+        margin-top: 1%;
+        display: flex;
+        float: right;
+        margin-right: 1%;
+    }
+    .statisticsMain {
+        margin-right: 5%;
+        display: inline-flex;
+        gap: 15px;
+        font-family: "Madimi One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        display: flex;
+    }
+    .statisticsLeft {
+        display: list-item;
+        list-style: none;
+    }
+    .statisticsPadding {
+        margin-top: 5px;
+    }
+    .logo-main img {
+        display: flex;
+        width: 230px;
+        height: 60px;
+    }
+    .mainDiv {
+        background-color: #0e1a39b8;
+        position: relative;
+        width: 240px;
+        padding: 0.5vh;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 15px;
+    }
+    .progressHealth{
+        color: white;
+        text-align: center;
+        position: relative;
+    }
+    .centered {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        font-family: "Encode Sans Expanded", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        transform: translate(-50%, -50%);
+    }
+    .centeredSecond {
+        position: absolute;
+        font-family: "Madimi One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        margin-left: 10px;
+    }
+    .statisticsLeftTwo {
+        font-family: "Encode Sans Expanded", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        justify-content: space-around;
+    }
+    .cash{
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+        gap: 5px;
+        color: white;
+        margin-left: 5px;
+        margin-right: 5px;
+        font-weight: 200;
+    }
+    .bank {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 15px;
+        color: white;
+        margin-left: 5px;
+        margin-right: 5px;
+        font-weight: 200;
+    }
+    .rightSidebarTwo {
+        display: flex;
+        float: right;
+        margin-right: 10px;
+    }
+    .weapons {
+        display: flex;
+        margin-left: 15px;
+        border-radius: 10px;
+        padding: 2vh;
+    }
+    .weaponimg{
+        width: 50px;
+        height: 35px;
+    }
+    .ammo {
+        margin-top: 2px;
+    }
+    .navBar {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        left: 1%;
+        top: 37%;
+        width: 200px;
+        height: 200px;
+        padding: 10px;
+        border-radius: 10%;
+      }
+    
+      .menu {
+        display: flex;
+        align-items: center;
+      }
+      .square {
+        width: 30px;
+        height: 30px;
+        border-radius: 10px;
+        background-color: #0e1a39b8;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        text-align: center;
+        font-size: 24px;
+        font-weight: 800;
+        line-height: normal;
+        font-family: "Encode Sans Expanded", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+      }
+      .menu h2 {
+        font-family: "BPG Nateli Mtavruli", sans-serif;
+        color: white;
+        margin-left: 1vh;
+      }
+    
+    .moneydiv{
+        display: inline-flex;
+        padding: 5px;
+    }
+    .iconsImage {
+        width: 15px;
+        height: 15px;
+    }
+    .greenzone {
+        gap: 10px;
+        display: flex;
+        align-items: center;
+        color: #fff;
+        font-family: "BPG Nateli Mtavruli", sans-serif;
+        padding: 10px;
+        text-wrap: nowrap;
+      }
+    .menuxzc {
+        background: linear-gradient(to left, #0e1a390b, #0e1a396b, #0e1a39b8);
+        display: none;
+        align-items: center;
+        border-radius: 15px;
+        width: 200px;
+    }
+
+    .menugps {
+        background: linear-gradient(to left, #0e1a390b, #0e1a396b, #0e1a39b8);
+        display: none;
+        align-items: center;
+        border-radius: 15px;
+        width: 250px;
+    }
+    .iconlocation {
+        width: 25px;
+        height: 25px;
+    }
+    .textzone {
+        font-size: 18px;
+        text-wrap: nowrap;
+        margin-top: 5px;
+    }
+    .gps {
+        gap: 1px;
+        display: flex;
+        align-items: center;
+        color: #fff;
+        font-family: "BPG Nateli Mtavruli", sans-serif;
+        padding: 5px;
+        text-wrap: nowrap;
+      }
+      .wanteddiv{
+        display: inline-flex;
+        gap: 10px;
+    }
+    .wantedimg {
+        width: 20px; 
+        height: 20px; 
+        display: none;
+    }
+    .right-bottom{
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        margin-left: auto;
+        width: 170px;
+        padding: 10px;
+        border-radius: 10%;
+        margin-right: 1vh;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+    
+    .notification {
+        width: 100%;
+        background: linear-gradient(to left, #0e1a390b, #0e1a396b, #0e1a390b);
+        color: white;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        bottom: -50px;
+        left: 0;
+        transition: bottom 0.5s;
+    }
+    
+    .hidden {
+        bottom: -50px;
+    }
+    
+    .visible {
+        bottom: 0px;
+    }
+    
+    .icon {
+        padding-right: 10px;
+        font-size: 20px;
+    }
+    
+    #message {
+        font-family: 'BPG Nateli Mtavruli', sans-serif;
+        font-size: 18px;
+    }
+    .rightGift{
+        display: flex;
+        align-items: flex-end;
+        flex-direction: row-reverse;
+        margin-left: auto;
+        width: 140px;
+        padding: 5px;
+        border-radius: 10%;
+        margin-right: 1vh;
+        flex-wrap: nowrap;
+    }
+    .giftimage {
+        width: 50px;
+        height: 50px;
+    }
+    .gifttimer {
+        background: linear-gradient(to left, #5900596b, #590059b6, #5900596b);
+        align-items: center;
+        border-radius: 15px;
+        width: 300px;
+    }
+    .textgift {
+        font-size: 15px;
+        text-wrap: nowrap;
+        margin-top: 3px;
+        font-weight: 900;
+    }
+    .giftzone {
+        gap: 5px;
+        display: flex;
+        align-items: center;
+        color: #fff;
+        font-family: "BPG Nateli Mtavruli", sans-serif;
+        padding: 5px;
+        text-wrap: nowrap;
+      }
+      .giftTexts {
+        padding: 5px;
+      }
+    
+      .statisticsimg {
+        width: 60px;
+        height: 60px;
+      }
+      .moneystats { 
+        width: 20px; 
+        height: 20px;
+      }
+      .iconsImageSecond {
+        width: 19px;
+        height: 19px;
+    }
+    .textgps {
+        font-size: 15px;
+    }
+}
