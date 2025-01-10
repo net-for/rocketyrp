@@ -1,4 +1,4 @@
-cef.emit("game:hud:setComponentVisible", "interface", false);
+cef.emit("game:hud:setComponentVisible", "interface", true);
 cef.emit("game:hud:setComponentVisible", "radar", true);
 
 cef.emit("game:data:pollPlayerStats", true, 50);
