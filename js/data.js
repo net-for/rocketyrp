@@ -2,7 +2,7 @@ cef.emit("game:hud:setComponentVisible", "interface", false);
 cef.emit("game:hud:setComponentVisible", "radar", true);
 
 cef.emit("game:data:pollPlayerStats", true, 50);
-cef.emit('grp:hud');
+cef.emit('rrp:hud');
 cef.on("data:pool:shimshili", (shimshili) => {
     document.getElementById('shimshili').textContent = shimshili;
 })
