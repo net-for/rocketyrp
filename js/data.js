@@ -9,8 +9,8 @@ cef.on("data:pool:shimshili", (shimshili) => {
 cef.on("data:pool:bankmoney", (bankmoney) => {
     document.getElementById('pBank').textContent = bankmoney;
 })
-cef.on("data:pool:pCash", (pCash) => {
-    document.getElementById('m').textContent = pCash;
+cef.on("data:pool:cashmoney", (cashmoney) => {
+    document.getElementById('pCash').textContent = cashmoney;
 })
 cef.on("game:data:playerStats", (hp, max_hp, arm, breath, wanted, weapon, ammo, max_ammo, money, speed) => {
     document.getElementById('weapon').src = "./img/weapons/" + weapon + ".png";
