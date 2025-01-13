@@ -1,4 +1,4 @@
-cef.emit("game:hud:setComponentVisible", "interface", true);
+cef.emit("game:hud:setComponentVisible", "interface", false);
 cef.emit("game:hud:setComponentVisible", "radar", true);
 
 cef.emit("game:data:pollPlayerStats", true, 50);
@@ -10,7 +10,7 @@ cef.on("data:pool:bankmoney", (bankmoney) => {
     document.getElementById('pBank').textContent = bankmoney;
 })
 cef.on("data:pool:cashmoney", (cashmoney) => {
-    document.getElementById('pCash').textContent = cashmoney;
+    document.getElementById('m').textContent = cashmoney;
 })
 cef.on("game:data:playerStats", (hp, max_hp, arm, breath, wanted, weapon, ammo, max_ammo, money, speed) => {
     document.getElementById('weapon').src = "./img/weapons/" + weapon + ".png";
